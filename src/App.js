@@ -1,5 +1,5 @@
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Screens/Home";
 import Register from "./Screens/Register";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
