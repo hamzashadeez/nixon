@@ -62,6 +62,7 @@ function Register() {
          className='entire'
         >
           <div className="intro">
+            {/* <button className="btn btn-success admin">Admin</button> */}
             <h2
               className="h2_instructor"
               style={{ textAlign: "center", marginBottom: "40px" }}

@@ -5,6 +5,7 @@
   justify-content: center;
   flex-direction: column;
   height: 73vh;
+  position: relative;
 }
 
 .entire {
@@ -61,10 +62,20 @@
 .form > button:hover {
   opacity: 0.8;
 }
+.admin{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 @media screen and (max-width: 900px) {
   .entire {
     flex-direction: column;
+  }
+
+  .intro > h2{
+    margin-bottom: 0;
+    font-size: 24px;
   }
 
   .form > form > input,

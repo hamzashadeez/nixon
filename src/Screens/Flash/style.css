@@ -1,0 +1,13 @@
+.center__them{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.center__them > h1{
+    font-size: 4rem;
+}
+
+.center__them > p{
+    font-size: 1rem;
+}
