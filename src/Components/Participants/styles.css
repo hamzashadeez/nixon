@@ -1,0 +1,16 @@
+.participants_main{
+    display: flex;
+    height: 61vh;
+}
+
+.big_div{
+    flex: 3
+}
+.small_div{
+    flex: 1;
+    background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.5)
+      );
+}

@@ -30,7 +30,7 @@ function Questions({ changeScreen }) {
       <AddQuestionModal show={show} onHide={handleClose} close={closeModal} />
       <div className="list_of_questions">
         {questions.map(({ id, data }) => (
-          <p key={id}>* {data.QuestionLabel}</p>
+          <div className='questionCONT'><p key={id}>* {data.QuestionLabel}</p></div>
         ))}
       </div>
       <div className="option__side">

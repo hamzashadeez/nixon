@@ -114,7 +114,7 @@ function Home() {
           localStorage.clear();
         })
         .then(async () => {
-          await db.collection("participants").doc(uuidv4()).set(user);
+          await db.collection("participants").doc(uuidv4()).set({score:JSON.parse(localStorage.getItem("score")), ...user});
           localStorage.setItem("score", JSON.stringify(0));
         })
         .then(()=>{setShow(true)})
@@ -165,7 +165,7 @@ function Home() {
           handleClose={handleClose}
         />
         <div className="head">
-          <h3 className="text-info">NIXON</h3>
+          <h3 className="text-info">Nixon Management Consultancy</h3>
           <button
             // disabled= {start ? true : false}
             className={status ? "btn btn-danger" : "btn btn-success"}

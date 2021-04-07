@@ -35,3 +35,21 @@
     align-items: center;
     height: 200px;
 }
+
+.questionCONT{
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  margin-right: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */  
+}
+.questionCONT > p{
+  margin: 0;
+  font-size: 14px;
+}
