@@ -114,7 +114,7 @@ function Home() {
           localStorage.clear();
         })
         .then(async () => {
-          await db.collection("participants").doc(uuidv4()).set({score:JSON.parse(localStorage.getItem("score")), ...user});
+          await db.collection("participants").doc(uuidv4()).set({score, ...user});
           localStorage.setItem("score", JSON.stringify(0));
         })
         .then(()=>{setShow(true)})

@@ -14,3 +14,16 @@
         rgba(255, 255, 255, 0.5)
       );
 }
+
+@media screen and (max-width: 600px) {
+    .participants_main{
+        flex-direction: column-reverse;
+    }
+    .big_div{
+        flex:1
+    }
+    .big_div > Table{
+        width: 90% !important;
+        font-size: 10px;
+    }
+}
