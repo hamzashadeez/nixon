@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react'
 import './style.css'
-import {useHistory} from 'react-router-dom'
+import {useHistory, useParams} from 'react-router-dom'
 function Flash() {
     const history = useHistory()
+    const { name } = useParams()
     useEffect(()=>{
+        console.log("param: ",name)
         setTimeout(()=>{
-            history.push("/")
+            history.push(`/${name}`)
         }, 1000)
     },[])
     return (

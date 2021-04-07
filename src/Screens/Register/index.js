@@ -53,7 +53,7 @@ function Register() {
     e.preventDefault();
     const data = { name, phone, email, state };
     localStorage.setItem("user", JSON.stringify(data));
-    history.push("/test");
+    history.push("/loading/test");
   };
   return (
     <div className="main">

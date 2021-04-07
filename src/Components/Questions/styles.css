@@ -1,0 +1,37 @@
+.questions__main_div {
+  display: flex;
+  padding: 10px;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2)
+  );
+  flex-direction: row;
+  height: 61vh;
+}
+.list_of_questions{
+    flex: 3;
+    overflow-y: scroll;
+    /* margin-right: 10px; */
+}
+.option__side{
+    flex: 1;
+    background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+#qest{
+    font-size: 15px;
+    color: #444
+}
+
+.add_a_question_div{
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
