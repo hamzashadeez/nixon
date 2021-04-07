@@ -45,7 +45,7 @@ function Register() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [state, setState] = useState("");
+  const [state, setState] = useState("Abia");
 
   const history = useHistory();
 
@@ -53,6 +53,7 @@ function Register() {
     e.preventDefault();
     const data = { name, phone, email, state };
     localStorage.setItem("user", JSON.stringify(data));
+    localStorage.setItem("score", JSON.stringify(0));
     history.push("/loading/test");
   };
   return (

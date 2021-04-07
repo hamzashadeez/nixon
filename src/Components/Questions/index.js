@@ -17,31 +17,8 @@ function Questions({ changeScreen }) {
         console.log(questions);
       });
     })();
-
-    // questions.map((d) => console.log(d));
   }, []);
-  const d = [
-    ["What is my name ?", "Usman", "Mohammad", "Hamza", "Sulaiman", "Hamza"],
-    [
-      "Muhammad Bn Abdullahi Bn... Muhammad Bn Abdullahi Bn... Muhammad Bn Abdullahi Bn...",
-      "Garba",
-      "Abdulhakim",
-      "Abdul Mutallib",
-      "Sulaiman",
-      "Abdul Mutallib",
-    ],
-    ["My DOB?", "1960", "1999", "1996", "1994", "1996"],
-    ["My religion...", "Hindi", "Islam", "PGG", "Christianity", "Islam"],
-    [
-      "Madrid is in which country",
-      "England",
-      "Spain",
-      "Italy",
-      "France",
-      "Spain",
-    ],
-    ["The Capital of Nigeria", "Katsina", "Lagos", "Kaduna", "Abuja", "Abuja"],
-  ];
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const closeModal = () => {
@@ -52,13 +29,6 @@ function Questions({ changeScreen }) {
     <div className="questions__main_div">
       <AddQuestionModal show={show} onHide={handleClose} close={closeModal} />
       <div className="list_of_questions">
-        {/* {d.map((data, index) => (
-          <h2 id="qest" key={data[0]}>
-            {index + 1}. {data[0]}
-          </h2>
-          QuestionLabel: "The Capital of Nigeria"
-
-        ))} */}
         {questions.map(({ id, data }) => (
           <p key={id}>* {data.QuestionLabel}</p>
         ))}

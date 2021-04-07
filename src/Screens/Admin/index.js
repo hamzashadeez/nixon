@@ -22,7 +22,7 @@ const Box = ({ label, num, screen, changeScreen }) => {
 };
 
 function Admin() {
-  const [screen, setScreen] = useState(1);
+  const [screen, setScreen] = useState(2);
   const changeScreen = (index)=>{
     setScreen(index)
   }
